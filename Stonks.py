@@ -14,3 +14,22 @@ print("Current Selling Price: " +x["Sell"])
 print("Current Buying Price: " +x["Buy"])
 
 print("Current Doge Value : " + str(DValue))
+
+print("___________________________________________________")
+
+BTT = 1380.56250000
+y = response["BTT"]
+
+BValue = float(y["Price"]) * BTT
+print("Current Price: " +y["Price"])
+print("Current Volume: " +y["Volume"])
+print("Current High: " +y["High"])
+print("Current Low: " +y["Low"])
+print("Current Selling Price: " +y["Sell"])
+print("Current Buying Price: " +y["Buy"])
+
+print("Current BTT Value : " + str(BValue))
+
+print("___________________________________________________")
+
+print("Total Portfolio Value = R " +  str(BValue+DValue))
