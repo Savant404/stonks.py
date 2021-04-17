@@ -1,5 +1,6 @@
 import requests
 
+
 response = requests.get("http://api.altcointrader.co.za/v3/live-stats").json()
 
 DOGE = 791.98308855
