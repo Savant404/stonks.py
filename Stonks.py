@@ -29,7 +29,8 @@ print("Current Selling Price: " +y["Sell"])
 print("Current Buying Price: " +y["Buy"])
 
 print("Current BTT Value : " + str(BValue))
-
 print("___________________________________________________")
-
 print("Total Portfolio Value = R " +  str(BValue+DValue))
+
+PROFIT = ((BValue + DValue)-1200)
+print("Total Profit so far = R " + str(PROFIT))
