@@ -3,7 +3,7 @@ import requests
 
 response = requests.get("http://api.altcointrader.co.za/v3/live-stats").json()
 
-DOGE = 791.98308855
+DOGE = 791.98308855 
 
 x = response['DOGE']
 DValue = float(x["Price"]) * DOGE
