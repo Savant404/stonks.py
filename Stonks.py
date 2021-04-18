@@ -3,7 +3,7 @@ import requests
 
 response = requests.get("http://api.altcointrader.co.za/v3/live-stats").json()
 
-DOGE = 791.98308855 
+DOGE = 791.98308855
 
 print("********************__Doge__********************")
 x = response['DOGE']
@@ -38,5 +38,3 @@ print("Total Portfolio Value = R " +  str(BValue+DValue))
 
 PROFIT = ((BValue + DValue)-1200)
 print("Total Profit so far = R " + str(PROFIT))
-
-
