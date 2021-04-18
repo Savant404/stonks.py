@@ -5,6 +5,7 @@ response = requests.get("http://api.altcointrader.co.za/v3/live-stats").json()
 
 DOGE = 791.98308855 
 
+print("********************__Doge__********************")
 x = response['DOGE']
 DValue = float(x["Price"]) * DOGE
 print("Current Price: " +x["Price"])
@@ -21,6 +22,8 @@ print("___________________________________________________")
 BTT = 1380.56250000
 y = response["BTT"]
 
+print("********************__BTT__********************")
+
 BValue = float(y["Price"]) * BTT
 print("Current Price: " +y["Price"])
 print("Current Volume: " +y["Volume"])
@@ -35,3 +38,5 @@ print("Total Portfolio Value = R " +  str(BValue+DValue))
 
 PROFIT = ((BValue + DValue)-1200)
 print("Total Profit so far = R " + str(PROFIT))
+
+
